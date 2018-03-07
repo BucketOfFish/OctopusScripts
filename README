@@ -1,0 +1,15 @@
+Places to change numbers if board slots change:
+configure.sh you’ve the lines at the bottom, change slots and one address code
+connect.sh, change address codes
+run.sh, the same
+stop.sh, the same
+launch.sh, change SSB slot number
+
+the launch.sh can be your main script to launch
+you can use it without any arguments, like so: ./launch.sh
+and it will load all constants, start running, and show you the status output that will refresh - you can quit that with Ctrl+C
+then you stop the run using ./stop.sh
+now, as constant loading takes some time, you can also run ./launch.sh fast
+that will circumvent the constants loading
+
+you also have monitor_running in which you need to change the SSB slot
